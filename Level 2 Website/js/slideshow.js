@@ -24,22 +24,29 @@ function MoveSlides(n) {
     i = images.length - 1;
   }
 
+  image.classList.remove("prev-animation");
+  image.classList.remove("next-animation");
+
   if (n < 0) {
-    image.classList.add("prev-animation");
+    setTimeout(() => {
+      image.classList.add("prev-animation");
+    }, 50);
     setTimeout(() => {
       image.classList.remove("prev-animation");
-    }, 1000);
+    }, 1050);
   }
 
   if (n > 0) {
-    image.classList.add("next-animation");
+    setTimeout(() => {
+      image.classList.add("next-animation");
+    }, 50);
     setTimeout(() => {
       image.classList.remove("next-animation");
-    }, 1000);
+    }, 1050);
   }
 
   setTimeout(() => {
     image.src = "img/" + images[i] + ".jpg";
     image.classList.remove("show");
-  }, 400);
+  }, 375);
 }
