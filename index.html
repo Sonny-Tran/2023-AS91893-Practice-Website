@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" style="overscroll-behavior-y: none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/slideshow.css" />
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/backtotop.js" defer></script>
+    <title>Ultra Bungee - Feel the fall!</title>
+  </head>
+  <body style="background: #0b0909; margin: 0px; animation: FadeIn 1s">
+    <button id="backtotop" onclick="topFunction()">&#8593;</button>
+    <div class="parallax" style="background-image: url(img/bridge2.jpg)">
+      <div
+        style="
+          background-color: rgba(0, 0, 0, 0.25);
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        "
+      >
+        <header
+          style="
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: 0;
+          "
+        >
+          <div
+            style="
+              padding-top: 1%;
+              margin: 0px 5rem;
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <img src="img/logo.png" style="height: 5rem" />
+            <nav>
+              <input
+                type="button"
+                onclick="window.location.href='#Gallery'"
+                class="navigation_button"
+                value="GALLERY"
+              />
+              <input
+                type="button"
+                onclick="window.location.href='index.html'"
+                class="navigation_button"
+                value="BRIDGE"
+              />
+              <input
+                type="button"
+                onclick="window.location.href='index.html'"
+                class="navigation_button"
+                value="CANYON"
+              />
+              <input
+                type="button"
+                onclick="window.location.href='index.html'"
+                class="navigation_button"
+                value="TOWER"
+              />
+            </nav>
+          </div>
+        </header>
+        <div style="display: inline-block; animation: SlideTop 1.5s">
+          <div class="title-box">
+            <t
+              style="
+                font-weight: bold;
+                font-family: verdana;
+                font-size: 3rem;
+                white-space: nowrap;
+              "
+              >Feel the fall with Ultra Bungee!</t
+            >
+          </div>
+          <div
+            style="
+              background-color: antiquewhite;
+              padding: 5% 10%;
+              width: 90%;
+              display: flex;
+              justify-content: space-between;
+            "
+          >
+            <button class="main-box-button">Test</button>
+            <button class="main-box-button">Test2</button>
+            <button class="main-box-button">Test3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 14vh 0" id="Gallery">
+      <div class="carousel" style="background-color: rgba(255, 255, 255, 0.1)">
+        <button class="carousel-button prev" onclick="MoveSlides(-1)">
+          &#60;
+        </button>
+        <button class="carousel-button next" onclick="MoveSlides(1)">
+          &#62;
+        </button>
+        <img src="img/bridge1.jpg" id="images" class="images show" />
+      </div>
+    </div>
+    <footer style="height: 1000px">
+      <p style="color: white; font-size: 1.5rem">Contact Infomation</p>
+      <p style="color: white; font-size: 1.5rem">
+        &copy; Ultra Bungee 2023 - Wesbite by S Tran & K Ngor
+      </p>
+    </footer>
+  </body>
+</html>
